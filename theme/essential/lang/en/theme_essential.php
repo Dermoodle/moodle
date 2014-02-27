@@ -51,7 +51,7 @@ $string['geneicsettings'] = 'General Settings';
 $string['autohide'] = 'Include Autohide Functionality';
 $string['autohidedesc'] = 'The Autohide functionality is designed to make Moodle less intimidating.  When editing is turned on edit icons only appear when the item is hovered over.';
 $string['editicons'] = 'Edit Icons V2';
-$string['editiconsdesc'] = 'This utilises the Font Awesome to display coloured and neater formatted edit icons in course pages and blocks.  Please note that currsently this is NOT compatible with Autohide.';
+$string['editiconsdesc'] = 'This utilises the Font Awesome to display coloured and neater formatted edit icons in course pages and blocks.  Please note that currently this is NOT compatible with Autohide.';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
 $string['footnote'] = 'Footnote';
@@ -77,12 +77,26 @@ $string['headerprofilepic'] = 'Display user\'s picture';
 $string['headerprofilepicdesc'] = 'If checked, displays the user\'s profile picture in the header of the page.';
 $string['layout'] = 'Use a standard course layout';
 $string['layoutdesc'] = 'This theme is designed to put both block columns on the side.  If you prefer the standard Moodle course layout you can check this box and be returned to the boring old three column layout.';
+$string['frontpageblocks'] = 'Frontpage blocks alignment';
+$string['frontpageblocksdesc'] = 'Here you can determine if the blocks on the frontpage align to the left or the right.';
+$string['left'] = 'Left';
+$string['right'] = 'Right';
 $string['perfinfo'] = 'Performance Info Mode';
 $string['perfinfodesc'] = 'Many sites don\'t need the fully detailed performance info.  Especially when viewed by users.  When enabled, this shows a cleaned up miniminal form with basic page load information.';
 $string['perf_max'] = 'Detailed';
 $string['perf_min'] = 'Minimal';
+$string['sideregionsmaxwidth'] = 'Use max width for side regions';
+$string['sideregionsmaxwidthdesc'] = 'This theme use fluid layout. In wide screens, the side regions containing blocks may become larger than needed. Check this to limit the width of these regions.';
 $string['visibleadminonly'] = 'Blocks moved into the area below will only be seen by admins';
 $string['backtotop'] = 'Back to top';
+$string['nextsection'] = 'Next Section';
+$string['previoussection'] = 'Previous Section';
+
+$string['pagewidth'] = 'Set Page Width';
+$string['pagewidthdesc'] = 'Choose from the list of availble page widths. for your site';
+$string['fixedwidthwide'] = 'Fixed Width - Wide';
+$string['fixedwidthnarrow'] = 'Fixed Width - Narrow';
+$string['variablewidth'] = 'Variable Width';
 
 $string['alwaysdisplay'] = 'Always Show';
 $string['displaybeforelogin'] = 'Show before login only';
@@ -131,6 +145,9 @@ $string['nav_pipe'] = 'Verticle line';
 /* Regions */
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
+$string['region-home-left'] = 'Home (Left)';
+$string['region-home-middle'] = 'Home (Middle)';
+$string['region-home-right'] = 'Home (Right)';
 $string['region-footer-left'] = 'Footer (Left)';
 $string['region-footer-middle'] = 'Footer (Middle)';
 $string['region-footer-right'] = 'Footer (Right)';
@@ -140,6 +157,12 @@ $string['region-hidden-dock'] = 'Hidden from users';
 $string['colorheading'] = 'Colour Settings';
 $string['colorheadingsub'] = 'Set the colours used in your theme';
 $string['colordesc'] = 'Here you can find various settings to change many of the colours found in this theme.';
+
+$string['slidecolors'] = 'Slideshow Colors';
+$string['slidecolorsdesc'] = 'Change the colors on the slideshow';
+
+$string['footercolors'] = 'Footer Colors';
+$string['footercolorsdesc'] = 'Change the colors on the page footers';
 
 $string['themecolor'] = 'Theme Colour';
 $string['themecolordesc'] = 'What colour should your theme be.  This will change mulitple components to produce the colour you wish across the moodle site';
@@ -160,9 +183,28 @@ $string['footerheadingcolordesc'] = 'Set the colour for block headings in the fo
 $string['pagebackground'] = 'Page Background Image';
 $string['pagebackgrounddesc'] = 'Upload your own background image.  This will be tiled in the background on all pages.  If none is uploaded a default image is used.';
 
-/* Frontpage Content */
-$string['frontcontentheading'] = 'Frontpage Content';
-$string['frontcontentheadingsub'] = 'Add information to your frontpage for users';
+/* Alternate Color Switcher */
+$string['alternativecolors'] = 'Alternative Colours {$a}';
+$string['alternativethemecolor'] = 'Alternative Theme Colour {$a}';
+$string['alternativethemecolordesc'] = 'What colour should your theme be for the alternative theme colours {$a}. If enabled and the user choose it, this will replace the default theme colour.';
+$string['alternativethemename'] = 'Color Scheme Name';
+$string['alternativethemenamedesc'] = 'Provide a name for your alternative theme colours';
+$string['alternativethemecolors'] = 'Alternative Theme Colours';
+$string['alternativethemecolorsdesc'] = 'Defines theme colours alternative that the user may select.';
+
+$string['alternativethemecolorname'] = 'Name of Alternative Color Set {$a}';
+$string['alternativethemecolornamedesc'] = 'Provide a recognisable name for this set of alternative theme colours';
+
+$string['alternativethemehovercolor'] = 'Alternative Theme Hover Colour {$a}';
+$string['alternativethemehovercolordesc'] = 'What colour should your theme hovers be for the alternative theme colours {$a}. If enabled and the user choose it, this will replace the default theme hover colour.';
+$string['defaultcolors'] = 'Default Colours';
+$string['enablealternativethemecolors'] = 'Enable Alternative Theme Colours {$a}';
+$string['enablealternativethemecolorsdesc'] = 'If enabled, the user will be able to choose the alternative theme colours {$a}.';
+$string['themecolors'] = 'Theme Colours';
+
+/* Frontpage Settings */
+$string['frontcontentheading'] = 'Frontpage Settings';
+$string['frontcontentheadingsub'] = 'Change what features you wish enabled on your moodle front page';
 $string['frontcontentdesc'] = 'This adds a custom content area inbetween the Slideshow and the Marketing boxes for your own custom content';
 
 $string['usefrontcontent'] = 'Enable Frontpage content';
@@ -170,6 +212,9 @@ $string['usefrontcontentdesc'] = 'If enabled this will display the content of th
 
 $string['frontcontentarea'] = 'Frontpage Content';
 $string['frontcontentareadesc'] = 'Whatever is typed into this box will display across the full width of the page inbetween the Slideshow and the Marketing spots ';
+
+$string['frontpagemiddleblocks'] = 'Enable Frontpage Middle Blocks';
+$string['frontpagemiddleblocksdesc'] = 'If enabled this will display 3 new block locations just under the marketing spots';
 
 /* Slideshow */
 $string['slideshowheading'] = 'Frontpage Slideshow';
@@ -182,6 +227,19 @@ $string['toggleslideshowdesc'] = 'Choose if you wish to hide or show the Slidesh
 $string['hideonphone'] = 'Slideshow on Mobiles';
 $string['hideonphonedesc'] = 'Choose if you wish to have the slideshow shown on mobiles or not';
 $string['readmore'] = 'Read More';
+
+$string['slidecolor'] = 'Slide Text Colour';
+$string['slidecolordesc'] = 'What colour should the main side text be.';
+$string['slideheadercolor'] = 'Slide Heading Colour';
+$string['slideheadercolordesc'] = 'What colour should the slide header be';
+$string['slidebuttoncolor'] = 'Slide Button Colour';
+$string['slidebuttoncolordesc'] = 'What colour should the slide "read more" button be';
+
+$string['slideshowvariant'] = 'Slideshow Design';
+$string['slideshowvariantdesc'] = 'Choose the style of slidewhow you would like to display';
+$string['slideshow1'] = 'Small Image on Right';
+$string['slideshow2'] = 'Large Background Image';
+$string['slideshow3'] = 'Design Three';
 
 $string['slideshowTitle'] = 'Slideshow';
 $string['slideinfodesc'] = 'Enter the settings for your slide.';
@@ -265,6 +323,22 @@ $string['instagramdesc'] = 'Enter the URL of your Instagram page. (i.e http://in
 
 $string['website'] = 'Website URL';
 $string['websitedesc'] = 'Enter the URL of your own website. (i.e http://www.pukunui.com)';
+
+/* Category Icons */
+$string['categoryiconheading'] = 'Icon based Category Display';
+$string['categoryiconheadingsub'] = 'Use icons to represent your categories';
+$string['categoryicondesc'] = 'If enabled this will allow you to set icons for each category of course.';
+
+$string['usecategoryicon'] = 'Enable Category Icons';
+$string['usecategoryicondesc'] = 'Use custom icons for categories';
+
+$string['defaultcategoryicon'] = 'Default Category Icons';
+$string['defaultcategoryicondesc'] = 'Set a default category icon';
+
+$string['categoryiconinfo'] = 'Set Custom Category Icons';
+$string['categoryiconinfodesc'] = 'Each icon is set by "category ID". You get these by looking at the URL or each category.';
+
+$string['categoryicon'] = 'Category';
 
 /* Mobile Apps */
 $string['mobileappsheading'] = 'Mobile Apps';
